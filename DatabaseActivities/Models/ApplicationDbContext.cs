@@ -8,7 +8,7 @@ using System.Web;
 
 namespace DatabaseActivities.Models
 {
-    public class ApplicationDbContext:DbContext
+    public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext() : base("DefaultConnection")
         {
@@ -24,6 +24,8 @@ namespace DatabaseActivities.Models
             modelBuilder.Configurations.AddFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(modelBuilder);
         }
+
+        public DbSet<Student> Students { get; set; }
 
     }
 }
