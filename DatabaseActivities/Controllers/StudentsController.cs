@@ -19,7 +19,7 @@ namespace DatabaseActivities.Controllers
         // GET: Students
         public ActionResult Index()
         {
-            return View(service.GetAllStudents());
+            return View(service.GetShortNameStudents(6));
         }
 
         // GET: Students/Details/5

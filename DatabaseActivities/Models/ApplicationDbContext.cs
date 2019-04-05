@@ -26,6 +26,6 @@ namespace DatabaseActivities.Models
         }
 
         public DbSet<Student> Students { get; set; }
-
+        public DbSet<Employee> Employee { get; set; }
     }
 }
