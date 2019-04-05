@@ -1,4 +1,5 @@
 ﻿using DatabaseActivities.Models.Entity;
+using DatabaseActivities.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,35 +9,52 @@ namespace DatabaseActivities.Service
 {
     public class StudentService
     {
+        private StudentRepository repository;
 
         public StudentService()
         {
-
+            repository = new StudentRepository();
         }
 
         public List<Student> GetAllStudents()
         {
-            return null;
+            return repository.GetAllStudents();
+        }
+
+        public List<Student> GetAllStudentsOver(int age)
+        {
+            List<Student> students = repository.GetAllStudents();
+            List<Student> studentsOver = new List<Student>();
+
+            for(int i = 0; i < students.Count; i++)
+            {
+                if(students.ElementAt(i).age > age)
+                {
+                    studentsOver.Add(students.ElementAt(i));
+                }
+            }
+
+            return studentsOver;
         }
 
         public void AddStudent(Student toAdd)
         {
-
+            repository.AddStudent(toAdd);
         }
 
         public Student GetStudentById(int id)
         {
-            return null;
+            return repository.GetStudentById(id);
         }
 
         public void SaveEdits(Student toSave)
         {
-
+            repository.SaveEdits(toSave);
         }
 
         public void DeleteStudent(Student toDelete)
         {
-
+            repository.DeleteStudent(toDelete);
         }
     }
 }
