@@ -27,5 +27,6 @@ namespace DatabaseActivities.Models
 
         public DbSet<Student> Students { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Weather> Weathers { get; set; }
     }
 }
