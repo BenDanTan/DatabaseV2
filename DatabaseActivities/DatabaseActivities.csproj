@@ -151,6 +151,7 @@
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StudentsController.cs" />
+    <Compile Include="Controllers\WeathersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -162,14 +163,21 @@
     <Compile Include="Migrations\201904051513354_Employee.Designer.cs">
       <DependentUpon>201904051513354_Employee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904091519303_Weather.cs" />
+    <Compile Include="Migrations\201904091519303_Weather.Designer.cs">
+      <DependentUpon>201904091519303_Weather.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Entity\Employee.cs" />
     <Compile Include="Models\Entity\Student.cs" />
+    <Compile Include="Models\Entity\Weather.cs" />
     <Compile Include="Models\IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\EmployeeRepository.cs" />
     <Compile Include="Repositories\StudentRepository.cs" />
+    <Compile Include="Repositories\WeatherRepository.cs" />
+    <Compile Include="Service\WeatherService.cs" />
     <Compile Include="Service\EmployeeService.cs" />
     <Compile Include="Service\StudentService.cs" />
   </ItemGroup>
@@ -220,6 +228,11 @@
     <Content Include="Views\Employees\Details.cshtml" />
     <Content Include="Views\Employees\Edit.cshtml" />
     <Content Include="Views\Employees\Index.cshtml" />
+    <Content Include="Views\Weathers\Index.cshtml" />
+    <Content Include="Views\Weathers\Create.cshtml" />
+    <Content Include="Views\Weathers\Delete.cshtml" />
+    <Content Include="Views\Weathers\Details.cshtml" />
+    <Content Include="Views\Weathers\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -243,6 +256,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904051513354_Employee.resx">
       <DependentUpon>201904051513354_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904091519303_Weather.resx">
+      <DependentUpon>201904091519303_Weather.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
