@@ -150,6 +150,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ShippingContainerController.cs" />
     <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Controllers\WeathersController.cs" />
     <Compile Include="Global.asax.cs">
@@ -167,16 +168,23 @@
     <Compile Include="Migrations\201904091519303_Weather.Designer.cs">
       <DependentUpon>201904091519303_Weather.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906201845083_ShippingContainer.cs" />
+    <Compile Include="Migrations\201906201845083_ShippingContainer.Designer.cs">
+      <DependentUpon>201906201845083_ShippingContainer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Entity\Employee.cs" />
+    <Compile Include="Models\Entity\ShippingContainer.cs" />
     <Compile Include="Models\Entity\Student.cs" />
     <Compile Include="Models\Entity\Weather.cs" />
     <Compile Include="Models\IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\EmployeeRepository.cs" />
+    <Compile Include="Repositories\ShippingContainerRepository.cs" />
     <Compile Include="Repositories\StudentRepository.cs" />
     <Compile Include="Repositories\WeatherRepository.cs" />
+    <Compile Include="Service\ShippingContainerService.cs" />
     <Compile Include="Service\WeatherService.cs" />
     <Compile Include="Service\EmployeeService.cs" />
     <Compile Include="Service\StudentService.cs" />
@@ -233,6 +241,11 @@
     <Content Include="Views\Weathers\Delete.cshtml" />
     <Content Include="Views\Weathers\Details.cshtml" />
     <Content Include="Views\Weathers\Edit.cshtml" />
+    <Content Include="Views\ShippingContainers\Create.cshtml" />
+    <Content Include="Views\ShippingContainers\Delete.cshtml" />
+    <Content Include="Views\ShippingContainers\Details.cshtml" />
+    <Content Include="Views\ShippingContainers\Edit.cshtml" />
+    <Content Include="Views\ShippingContainers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -259,6 +272,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904091519303_Weather.resx">
       <DependentUpon>201904091519303_Weather.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906201845083_ShippingContainer.resx">
+      <DependentUpon>201906201845083_ShippingContainer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

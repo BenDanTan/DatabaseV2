@@ -30,5 +30,7 @@ namespace DatabaseActivities.Models
         public DbSet<Employee> Employees { get; set; }
 
         public DbSet<Weather> Weathers { get; set; }
+
+        public DbSet<ShippingContainer> ShippingContainers { get; set; }
     }
 }

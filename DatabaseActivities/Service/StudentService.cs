@@ -36,6 +36,21 @@ namespace DatabaseActivities.Service
 
             return studentsOver;
         }
+        public List<Student> GetAllStudentsLonger(int length)
+        {
+            List<Student> students = repository.GetAllStudents();
+            List<Student> studentsLonger = new List<Student>();
+            
+            for(int i=0; i < students.Count; i++)
+            {
+                if (students.ElementAt(i).name.Length < length)
+                {
+                    studentsLonger.Add(students.ElementAt(i));
+                }
+
+            }
+            return studentsLonger;
+        }
 
         public void AddStudent(Student toAdd)
         {
