@@ -241,11 +241,16 @@
     <Content Include="Views\Weathers\Delete.cshtml" />
     <Content Include="Views\Weathers\Details.cshtml" />
     <Content Include="Views\Weathers\Edit.cshtml" />
-    <Content Include="Views\ShippingContainers\Create.cshtml" />
-    <Content Include="Views\ShippingContainers\Delete.cshtml" />
-    <Content Include="Views\ShippingContainers\Details.cshtml" />
-    <Content Include="Views\ShippingContainers\Edit.cshtml" />
-    <Content Include="Views\ShippingContainers\Index.cshtml" />
+    <Content Include="Views\ShippingContainer\Create.cshtml" />
+    <Content Include="Views\ShippingContainer\Delete.cshtml" />
+    <Content Include="Views\ShippingContainer\Details.cshtml" />
+    <Content Include="Views\ShippingContainer\Edit.cshtml" />
+    <Content Include="Views\ShippingContainer\Index.cshtml" />
+    <Content Include="Views\Shipping\Create.cshtml" />
+    <Content Include="Views\Shipping\Delete.cshtml" />
+    <Content Include="Views\Shipping\Details.cshtml" />
+    <Content Include="Views\Shipping\Edit.cshtml" />
+    <Content Include="Views\Shipping\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
